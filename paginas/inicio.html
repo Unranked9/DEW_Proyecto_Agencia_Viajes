@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Peru</title>
+    <link href="../css/estilos1.css" rel="stylesheet">
+    <link rel="stylesheet" href="../lightbox/css/lightbox.css">
+	  <script src="../lightbox/js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body> 
+  <header>
+    <div class="logo">
+      <a href="#"><h1>Turismo Perú</h1></a>
+    </div>
+    <div class="buscador">
+      <input type="text" placeholder="🔍 Buscar...">
+    </div>
+    <div class="redes">
+      <span><em>Síguenos en nuestras redes</em></span>
+      <a href="https://www.instagram.com/skyviajesperu/?hl=es-la" target="_blank">
+        <img src="../imagenes/instagram.png" alt="instagram"></a>
+      <a href="https://www.facebook.com/groups/112717405410870/?locale=es_LA" target="_blank">
+        <img src="../imagenes/facebook.png" alt="facebook"></a>
+      <a href="https://api.whatsapp.com/send/?phone=51920843180&text&type=phone_number&app_absent=0" target="_blank"> 
+        <img src="../imagenes/whatsapp.png" alt="WhatsApp"></a>
+    </div>
+  </header>
+
+  <nav>
+  <div class="menu-item">
+    <a href="#">Acerca De</a>
+    <div class="submenu">
+    <div class="submenu-item">
+    <a href="../paginas/quienes somos.html">Quienes Somos</a>
+      </div>
+      </div>
+      </div>
+
+  <div class="menu-item">
+    <a href="#">Regiones</a>
+    <div class="submenu">
+      <div class="submenu-item">
+        <a href="../paginas/Region Costa.html">Costa</a>
+        <div class="submenu-nivel2">
+          <div class="submenu-item">
+            <a href="../paginas/Ica.html">Ica</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="submenu-item">
+        <a href="../paginas/Sierra.html">Sierra</a>
+        <div class="submenu-nivel2">
+          <div class="submenu-item">
+            <a href="../paginas/cusco.html">Cusco</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="submenu-item">
+        <a href="../paginas/selvaperuana.html">Selva</a>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item"><a href="#">Experiencias</a></div>
+  <div class="menu-item"><a href="#">Blogs</a></div>
+
+  <div class="menu-item">
+  <a href="#">Contáctanos</a>
+  <div class="submenu">
+  <a href="../paginas/Formulario.html">Formulario de Contacto</a>
+  </div>
+</div>
+</nav>
+
+<div class="banner-container">
+  <div class="slidess" id="slidess">
+    <div class="slidee">
+      <img src="../imagenes/banner2.jpg " alt="Imagen 1">
+    </div>
+    <div class="slidee">
+      <img src="../imagenes/banner3.jpg" alt="Imagen 2">
+    </div>
+    <div class="slidee">
+      <img src="../imagenes/banner4.jpg" alt="Imagen 3">
+    </div>
+  </div>
+  <div class="dots">
+    <span class="dot active" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+  </div>
+</div>
+
+   <section class="destacado">
+    <h2>Lo más destacado</h2>
+    <div class="slider-container">
+      <div class="slider-track" id="sliderTrack">
+        <div class="slide">
+          <a href="../imagenes/principal5.jpeg"  data-lightbox="GrupoA">
+          <img src="../imagenes/principal5.jpeg"></a>
+        <h5>Huacachina</h5>
+            <p>Un oasis en medio del desierto rodeado de dunas, ideal 
+            para paseos en buggy, sandboard y disfrutar del atardecer 
+            en el desierto peruano.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal1.jpeg"  data-lightbox="GrupoA">
+        <img src="../imagenes/principal1.jpeg"></a>
+        <h5>Pacaya Samiria</h5>
+            <p>Una de las áreas protegidas más grandes del Perú, conocida 
+            por su increíble biodiversidad, ríos espejados y experiencias 
+            únicas en la Amazonía.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal2.jpeg"  data-lightbox="GrupoA">
+        <img src="../imagenes/principal2.jpeg"></a>
+        <h5>Catarata de Ahuashiyacu</h5>
+            <p>Ubicada a pocos minutos de la ciudad, esta catarata ofrece 
+            un entorno natural perfecto para refrescarse y relajarse entre 
+            la selva.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal3.jpeg"  data-lightbox="GrupoA">
+        <img src="../imagenes/principal3.jpeg"></a>
+        <h5>Laguna 69</h5>
+            <p>Ubicada en el Parque Nacional Huascarán, esta laguna de aguas 
+            turquesas es un destino ideal para los amantes del trekking y 
+            la naturaleza de altura.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal6.jpg"  data-lightbox="GrupoB">
+        <img src="../imagenes/principal6.jpg"></a>
+        <h5>Islas Ballestas</h5>
+            <p>Un grupo de islas rocosas frente a la costa de Paracas, hogar 
+            de una gran variedad de fauna marina como lobos marinos, pingüinos
+            de Humboldt y aves guaneras. El paseo en bote permite acercarse sin
+            perturbar el ecosistema.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal7.jpg"  data-lightbox="GrupoB">
+        <img src="../imagenes/principal7.jpg"></a>
+        <h5>Chan Chan</h5>
+            <p>Antigua capital del reino Chimú, considerada la ciudad de adobe más
+            grande de América. Sus muros grabados con relieves muestran la riqueza 
+            cultural de esta civilización preincaica.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal8.jpg"  data-lightbox="GrupoB">
+        <img src="../imagenes/principal8.jpg"></a>
+        <h5>Machu Picchu</h5>
+            <p>Una de las siete maravillas del mundo moderno. Esta ciudadela inca 
+            enclavada entre montañas ofrece un viaje al pasado y una conexión espiritual
+            con la naturaleza. Ideal para caminatas y fotografía.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal9.jpg"  data-lightbox="GrupoB">
+        <img src="../imagenes/principal9.jpg"></a>
+        <h5>Cañón del Colca</h5>
+            <p>Con más de 3,400 metros de profundidad, es uno de los cañones más profundos
+            del mundo. Desde el mirador de la Cruz del Cóndor se pueden ver estas majestuosas 
+            aves surcar el cielo.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal10.png"  data-lightbox="GrupoC">
+        <img src="../imagenes/principal10.png"></a>
+        <h5>Mirador de los Andes</h5>
+            <p>Ubicado a más de 4,900 msnm, este mirador ofrece una vista panorámica de los volcanes 
+            más importantes del sur peruano. Es una parada obligatoria rumbo al Colca y un punto de
+            contacto con la inmensidad del altiplano andino.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal11.jpg"  data-lightbox="GrupoC">
+        <img src="../imagenes/principal11.jpg"></a>
+        <h5>Bosque de Piedras de Huayllay</h5>
+            <p>Un bosque geológico natural con enormes formaciones rocosas esculpidas por la erosión 
+            durante millones de años. Algunas tienen forma de animales y figuras humanas. Es un lugar
+            ideal para caminatas y turismo de aventura en la sierra central.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal12.jpg"  data-lightbox="GrupoC">
+        <img src="../imagenes/principal12.jpg"></a>
+        <h5>Valle del Mantaro</h5>
+            <p>Este fértil valle andino combina tradición, paisajes y cultura viva. Abarca pueblos como 
+            Concepción, Jauja y Huancayo, conocidos por su producción artesanal, gastronomía típica y 
+            festividades como la tunantada. Es ideal para el turismo rural y cultural.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal13.jpg"  data-lightbox="GrupoC">
+        <img src="../imagenes/principal13.jpg"></a>
+        <h5>Playa Punta Sal</h5>
+            <p>Ubicada en el extremo norte del Perú, es una de las playas más cálidas y tranquilas del país.
+            Sus aguas tibias, arenas blancas y cielo despejado la convierten en un paraíso perfecto para 
+            descansar, practicar snorkel o disfrutar de un viaje en pareja o familia.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal14.jpg"  data-lightbox="GrupoD">
+        <img src="../imagenes/principal14.jpg"></a>
+        <h5>Fortaleza de Kuelap</h5>
+            <p>Una impresionante ciudadela preincaica construida por la cultura Chachapoyas. Situada sobre
+            una montaña y rodeada de murallas de hasta 20 metros de alto, Kuelap sorprende por su 
+            arquitectura monumental y su historia ancestral. Se accede en teleférico desde Nuevo Tingo.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal15.jpg"  data-lightbox="GrupoD">
+        <img src="../imagenes/principal15.jpg"></a>
+        <h5>Valle Sagrado de los Incas</h5>
+            <p>Hermosos pueblos andinos como Pisac y Ollantaytambo, rodeados de terrazas agrícolas, ríos y 
+            montañas. Punto clave antes de visitar Machu Picchu.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal16.png"  data-lightbox="GrupoD">
+        <img src="../imagenes/principal16.png"></a>
+        <h5>Nevado Pastoruri</h5>
+            <p>Glaciar visitable del Parque Nacional Huascarán. Aunque en retroceso, aún se puede ver nieve,
+            puyas Raimondi y lagunas altoandinas.</p></div>
+
+        <div class="slide">
+        <a href="../imagenes/principal17.jpg"  data-lightbox="GrupoD">
+        <img src="../imagenes/principal17.jpg"></a>
+        <h5>Complejo Arqueológico El Brujo</h5>
+            <p>Ubicado en la región La Libertad, este centro ceremonial mochica destaca por sus huacas decoradas 
+            con relieves coloridos. El hallazgo más importante es la Señora de Cao, una antigua gobernante momificada 
+            con tatuajes visibles, que revela el poder de la mujer en la cultura prehispánica. </p></div>
+    </div>
+    </div>
+     <div class="paginacion">
+      <button onclick="cambiarPagina('prev')">&lt;</button>
+      <button onclick="cambiarPagina(1)" id="btn1">1</button>
+      <button onclick="cambiarPagina(2)" id="btn2">2</button>
+      <button onclick="cambiarPagina(3)" id="btn3">3</button>
+      <button onclick="cambiarPagina(4)" id="btn3">4</button>
+      <button onclick="cambiarPagina('next')">&gt;</button>
+    </div>
+  </section>
+
+<main>
+  <aside>	
+				<h1>PREVIEW</h1>
+				<h4>El turismo en el Perú</h4>
+				<h5>PROMPERÚ Oficial</h5>
+				<video controls>
+					<source src="../videos/Perú, turismo y aventura.mp4">
+				</video>
+			</aside>
+</main>
+  <section class="opiniones">
+    <h2>Opiniones de nuestros viajeros</h2>
+    <p class="subtitulo">Todas las opiniones han sido escritas por clientes reales que nos han ayudado a mejorar cada día más.</p>
+    <div class="rating">5.0/5.0 ⭐⭐⭐⭐⭐</div>
+    <div class="info-resumen">1115 opiniones | 76 pasajeros</div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="nombre">Milagros Alexandra</div>
+        <div class="pais">Paraguay</div>
+        <div class="estrellas">⭐⭐⭐⭐⭐</div>
+        <div class="comentario">
+          Gran tour. Me fui con la cabeza llena de datos curiosos y una sensación de haber conocido algo real.
+        </div>
+        <div class="fecha">Publicado el 26 de junio de 2025</div>
+      </div>
+
+      <div class="card">
+        <div class="nombre">Sebastian Puch</div>
+        <div class="pais">Suiza</div>
+        <div class="estrellas">⭐⭐⭐⭐⭐</div>
+        <div class="comentario">
+          Visiting Caral was a powerful experience. I had never heard about this place before, but learning it...
+        </div>
+        <div class="fecha">Publicado el 26 de junio de 2025</div>
+      </div>
+
+      <div class="card">
+        <div class="nombre">Lucia Bentancourt</div>
+        <div class="pais">Uruguay</div>
+        <div class="estrellas">⭐⭐⭐⭐⭐</div>
+        <div class="comentario">
+          Pensé que solo íbamos a ver lobos marinos desde el barco, pero cuando nos dijeron que podíamos nadar...
+        </div>
+        <div class="fecha">Publicado el 26 de junio de 2025</div>
+      </div>
+
+      <div class="card">
+        <div class="nombre">Emily Ranieri</div>
+        <div class="pais">Jamaica</div>
+        <div class="estrellas">⭐⭐⭐⭐⭐</div>
+        <div class="comentario">
+          Swimming with the sea lions was absolutely wild in the best way! I’ve never done anything like that.
+        </div>
+        <div class="fecha">Publicado el 26 de junio de 2025</div>
+      </div>
+    </div>
+
+    <button class="btn">Ver todas las opiniones</button>
+  </section>
+
+  <section class="recomendaciones">
+    <h2>Recomendaciones</h2>
+    <div class="barra-color"></div>
+
+    <button class="flecha izquierda" onclick="scrollIzquierda()">‹</button>
+    <button class="flecha derecha" onclick="scrollDerecha()">›</button>
+
+    <div class="recomendaciones-container" id="slider">
+      <div class="reco-card">
+        <img class="logo-icon" src="../imagenes/logogirl.png" alt="logo">
+        <div class="nombre">a a</div>
+        <div class="fecha">2024-11-03</div>
+        <div class="estrellas">⭐⭐⭐⭐⭐ <span class="verificado">✔</span></div>
+        <div class="comentario">
+        <span class="texto-corto">
+        Hicimos el tour por el centro histórico de Lima con Ricardo (guía). Recorrido corto aunque suficiente y...</span>
+        <span class="texto-completo" style="display: none;">
+        Hicimos el tour por el centro histórico de Lima con Ricardo (guía). Recorrido corto aunque suficiente y perfecto con las explicaciones de Ricardo. Muy amable y dispuesto a ayudarnos con todo. 5 estrellas!
+        </span>
+        </div> 
+        <div class="leer-mas" onclick="mostrarMas(this)">Leer más</div>
+      </div>
+
+      <div class="reco-card">
+        <img class="logo-icon" src="../imagenes/logogirl.png" alt="logo">
+        <div class="nombre">María Clara Soto</div>
+        <div class="fecha">2024-11-02</div>
+        <div class="estrellas">⭐⭐⭐⭐⭐ <span class="verificado">✔</span></div>
+        <div class="comentario">
+        <span class="texto-corto">
+        Esta agencia se merece un verdadero agradecimiento y felicitación por el excelente tour que ofrecen. Diego fue un...</span>
+        <span class="texto-completo" style="display: none;">
+        Esta agencia se merece un verdadero agradecimiento y felicitación por el excelente tour que ofrecen. Diego fue un guía excelente, muy claro y amable durante todo el recorrido. Sin duda lo recomendaría.
+        </span>
+        </div> 
+        <div class="leer-mas" onclick="mostrarMas(this)">Leer más</div>
+        </div>
+
+        <div class="reco-card">
+        <img class="logo-icon" src="../imagenes/logoman.png" alt="logo">
+        <div class="nombre">Francisco Claro</div>
+        <div class="fecha">2024-11-02</div>
+        <div class="estrellas">⭐⭐⭐⭐⭐ <span class="verificado">✔</span></div>
+        <div class="comentario">Gracias Bea y Jehidy por su amabilidad y ayuda.</div>
+        </div>
+
+      <div class="reco-card">
+        <img class="logo-icon" src="../imagenes/logogirl.png" alt="logo">
+        <div class="nombre">Antonia Imbert</div>
+        <div class="fecha">2024-11-02</div>
+        <div class="estrellas">⭐⭐⭐⭐⭐ <span class="verificado">✔</span></div>
+        <div class="comentario">Wilber, quien realizó el tour por la ciudad de Cuzco muy simpático, siempre dispuesto a resolver nuestras dudas.</div>
+        </div>
+
+      <div class="reco-card">
+        <img class="logo-icon" src="../imagenes/logogirl.png" alt="logo">
+        <div class="nombre">Lucía Gómez González</div>
+        <div class="fecha">2024-11-02</div>
+        <div class="estrellas">⭐⭐⭐⭐⭐ <span class="verificado">✔</span></div>
+        <div class="comentario">
+        <span class="texto-corto">
+        Wilber fue un guía estupendo. Tiene mucho conocimiento sobre Perú, los incas y sus costumbres e hizo el tour ameno. Sin duda...</span>
+        <span class="texto-completo" style="display: none;">
+        Wilber fue un guía estupendo. Tiene mucho conocimiento sobre Perú, los incas y sus costumbres e hizo el tour ameno. Sin duda repetiríamos.
+        </span>
+        </div> 
+        <div class="leer-mas" onclick="mostrarMas(this)">Leer más</div>
+        </div>
+
+      <div class="reco-card">
+        <img class="logo-icon" src="../imagenes/logoman.png" alt="logo">
+        <div class="nombre">Garazi Gomez amiano</div>
+        <div class="fecha">2024-11-02</div>
+        <div class="estrellas">⭐⭐⭐⭐⭐ <span class="verificado">✔</span></div>
+        <div class="comentario">
+        <span class="texto-corto">
+        Buen free tour por el centro histórico de la ciudad. Ricardo el guía resolvió todas las dudas que teníamos, nos recomendó y...</span>
+        <span class="texto-completo" style="display: none;">
+        Buen free tour por el centro histórico de la ciudad. Ricardo el guía resolvió todas las dudas que teníamos, nos recomendó y aconsejo sobre cosas del viaje, incluso nos ayudó con el tema de internet.
+        </span>
+        </div> 
+        <div class="leer-mas" onclick="mostrarMas(this)">Leer más</div>
+        </div>
+
+      <div class="reco-card">
+        <img class="logo-icon" src="../imagenes/logoman.png" alt="logo">
+        <div class="nombre">Josep Rodriguez</div>
+        <div class="fecha">2024-11-02</div>
+        <div class="estrellas">⭐⭐⭐⭐⭐ <span class="verificado">✔</span></div>
+        <div class="comentario">
+        <span class="texto-corto">
+        En general ha estat una experiencia molt satisfactoria. Molt puntuales, ben organitzat I totes les activitat molt interessants.</span>
+        <span class="texto-completo" style="display: none;">
+        En general ha estat una experiencia molt satisfactoria.<br>
+        Molt puntuales, ben organitzat I totes les activitat molt interessants.
+      I molt important, el guía un 10. Sempre atent I disposat a ayudar.
+        </span>
+        </div> 
+        <div class="leer-mas" onclick="mostrarMas(this)">Leer más</div>
+        </div>
+
+      <div class="reco-card">
+        <img class="logo-icon" src="../imagenes/logogirl.png" alt="logo">
+        <div class="nombre">Herrila Veloso</div>
+        <div class="fecha">2024-11-02</div>
+        <div class="estrellas">⭐⭐⭐⭐⭐ <span class="verificado">✔</span></div>
+        <div class="comentario">Fizemos o passeio do pachacamac com eles e nosso guia foi incrível! Extremamente solicito e o tour foi maravilhoso.</div>
+        </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>HORARIOS DE OFICINA</h4>
+        <p>Lunes a Sábado: 9:00AM - 1:00PM<br>
+         | 4:00PM - 8:00PM Domingos: 10:00 AM - 7:00 PM</p>
+        <br>
+        <h4>HORARIOS DE EQUIPO DE VENTAS</h4>
+        <p>Lunes a Sábado: 9:00AM - 1:00PM<br>
+         | 4:00PM - 8:00PM Domingos: 2:00PM - 6:00PM</p>
+      </div>
+      <div>
+        <h4>MÉTODOS DE PAGO</h4>
+        <img src="../imagenes/pagos.png" alt="pagos">
+      </div>
+      <div>
+        <h4>CONTÁCTANOS</h4>
+        <p>
+          +51 999 888 777 |
+          +51 888 777 999
+        </p>
+        <br>
+        <p>
+          turismoperu@gmail.com
+        </p>
+         <br>
+        <p>
+          info@turismoperu.com
+        </p>
+         <br>
+        <p>
+          reservas@turismoperu.com
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/scripts.js"></script>
+</body>
+</html>
